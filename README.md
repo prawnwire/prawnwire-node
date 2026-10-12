@@ -1,12 +1,12 @@
-# @prawnwire/node
+# prawnwire
 
 The official TypeScript client for the [Prawnwire](https://prawnwire.com) email send API. No runtime
 dependencies, strict types, and it runs anywhere `fetch` does: Node 18+, Bun, Deno, Cloudflare Workers
 and other edge runtimes.
 
 ```sh
-npm install @prawnwire/node
-# or: pnpm add @prawnwire/node / yarn add @prawnwire/node / bun add @prawnwire/node
+npm install prawnwire
+# or: pnpm add prawnwire / yarn add prawnwire / bun add prawnwire
 ```
 
 ## Send an email
@@ -15,7 +15,7 @@ Create an API key in the Prawnwire console with the `email:send` scope. Send fro
 your verified domains.
 
 ```ts
-import { Prawnwire } from '@prawnwire/node'
+import { Prawnwire } from 'prawnwire'
 
 const prawnwire = new Prawnwire() // reads PRAWNWIRE_API_KEY, or pass the key: new Prawnwire('pw_live_...')
 
@@ -79,7 +79,7 @@ Outputs are camelCase: `messageId`, `submittedAt`, `to`, `message`, `totalCount`
 Every failure is a `PrawnwireError`:
 
 ```ts
-import { Prawnwire, PrawnwireError } from '@prawnwire/node'
+import { Prawnwire, PrawnwireError } from 'prawnwire'
 
 try {
   await prawnwire.emails.send(message)
