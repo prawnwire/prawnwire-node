@@ -8,6 +8,7 @@ All notable changes to this package are documented here. The format follows
 
 ### Added
 
+- Published on npm as `@prawnwire/node`.
 - `Prawnwire` client with `emails.send`, `emails.sendBatch`, `emails.list`, `emails.get`,
   `suppressions.list`, `suppressions.delete`, `domains.list`, `members.list` and `me`.
 - camelCase inputs and outputs mapped to the API's Postmark field names; `to`, `cc`, `bcc` and
