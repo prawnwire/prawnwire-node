@@ -1,5 +1,5 @@
 {
-  "name": "prawnwire",
+  "name": "@prawnwire/node",
   "version": "0.1.0",
   "description": "Zero-dependency TypeScript client for the Prawnwire email send API.",
   "keywords": [
@@ -38,6 +38,9 @@
       }
     },
     "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "dist",
